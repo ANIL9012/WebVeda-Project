@@ -4,7 +4,7 @@ import AllCourse from "./components/AllCourse/AllCourse";
 import WebVeda from "./components/WebVeda/WebVeda";
 import WhyWebVeda from "./components/WebVeda/WhyWebVeda";
 import Students from "./components/WebVeda/Students";
-import Slider from "./components/Slider/Slider";
+import LoginPage from "./components/Form/LoginPage";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/webveda" element={<WebVeda />} />
         <Route path="/why-webveda" element={<WhyWebVeda />} />
         <Route path="/testimonials" element={<Students />} />
-        <Route path="/authenticate" element={<Slider />} />
+        <Route path="/authenticate" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
