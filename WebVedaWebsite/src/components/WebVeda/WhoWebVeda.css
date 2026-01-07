@@ -1,0 +1,88 @@
+/* Background */
+.who-section {
+  background: radial-gradient(
+      circle at top,
+      rgba(65, 105, 225, 0.15),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #061b3a, #020d1f);
+  position: relative;
+}
+
+/* Card */
+.who-card {
+  background: rgba(8, 28, 60, 0.9);
+  border-radius: 14px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 220px;
+}
+
+/* Hover */
+.who-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border-color: rgba(65, 105, 225, 0.5);
+}
+
+/* Icon */
+.who-card .icon {
+  font-size: 36px;
+  color: #4c74ff;
+}
+
+/* Card Title */
+.who-card h5 {
+  font-size: 1.2rem;
+}
+
+/* Card Text */
+.who-card p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+/* Tablet (sm) */
+@media (max-width: 768px) {
+  .who-card {
+    padding: 24px;
+    min-height: 200px;
+  }
+
+  .who-card .icon {
+    font-size: 32px;
+  }
+
+  .who-card h5 {
+    font-size: 1.1rem;
+  }
+
+  .who-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile (xs) */
+@media (max-width: 576px) {
+  .who-card {
+    padding: 20px;
+    min-height: 180px;
+  }
+
+  .who-card .icon {
+    font-size: 28px;
+  }
+
+  .who-card h5 {
+    font-size: 1rem;
+  }
+
+  .who-card p {
+    font-size: 0.8rem;
+  }
+}

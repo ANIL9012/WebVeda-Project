@@ -1,0 +1,95 @@
+/* CARD */
+.freelance-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.35s ease;
+}
+
+/* OVERLAY SHADOW */
+.freelance-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.25),
+    transparent
+  );
+  transition: all 0.35s ease;
+  z-index: 1;
+}
+
+/* DESKTOP HOVER ONLY */
+@media (hover: hover) {
+  .freelance-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .freelance-card:hover::before {
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.35),
+      transparent
+    );
+  }
+}
+
+/* IMAGE */
+.freelance-image {
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.freelance-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transform: rotate(-4deg) translateY(-8px);
+}
+
+/* BODY */
+.freelance-body {
+  position: relative;
+  z-index: 2;
+  color: #c4c4c4;
+}
+.freelance-body h6{
+    font-size: 12px;
+}
+.divider {
+  border-color: #ffffffeb;
+}
+
+/* FOOTER */
+.freelance-footer {
+  padding: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+/* 🔹 MOBILE OPTIMIZATION */
+@media (max-width: 576px) {
+  .freelance-image {
+    height: 200px;
+  }
+
+  .freelance-body h6 {
+    font-size: 15px;
+  }
+}
+
+/* 🔹 TABLET */
+@media (max-width: 992px) {
+  .freelance-image {
+    height: 210px;
+  }
+}
