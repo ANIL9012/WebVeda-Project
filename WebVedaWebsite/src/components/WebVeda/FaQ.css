@@ -1,0 +1,112 @@
+/* ===== FAQ SECTION ===== */
+.faq-section {
+  background: #fff;
+}
+
+/* LEFT TITLE */
+.faq-title {
+  font-size: 42px;
+  line-height: 1.2;
+}
+.faq-title span {
+  color: #2f66ff;
+}
+
+/* CARD */
+.faq-card {
+  border: 1px solid #2f66ff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HEADER */
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.faq-left h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ICON */
+.faq-icon {
+  width: 44px;
+  height: 44px;
+  background: #eaf0ff;
+  color: #2f66ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* TOGGLE */
+.faq-toggle {
+  color: #2f66ff;
+  font-size: 18px;
+}
+
+/* ANSWER */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.faq-answer.open {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 14px;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 32px;
+  }
+
+  .faq-left h6 {
+    font-size: 14px;
+  }
+
+  .faq-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .faq-card {
+    padding: 16px;
+  }
+
+  .faq-answer p {
+    font-size: 13px;
+  }
+}
