@@ -1,4 +1,7 @@
 /* CARD */
+.pg-section {
+  margin-top: 90px;
+}
 .freelance-card {
   position: relative;
   border-radius: 18px;

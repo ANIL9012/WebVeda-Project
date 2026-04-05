@@ -149,7 +149,7 @@ function AllCourse() {
       : courses.filter((course) => course.category === activeCategory);
 
   return (
-    <section className="text-center ">
+    <section className="text-center pg-section">
       <div className="container mb-5">
         <h1 className="fw-bold display-5 mt-5 fs-1 fw-normal">
           Practical Courses
