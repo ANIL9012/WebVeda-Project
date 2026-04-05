@@ -44,7 +44,7 @@ function Navbar() {
         {/* Logo */}
         <Link
           className="navbar-brand fw-bold fs-3"
-          to="/"
+          to="webveda"
           onClick={closeNavbar}
         >
           Web<span className="text-primary">Veda</span>
